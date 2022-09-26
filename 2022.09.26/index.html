@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лошадки</title>
+    <style>
+        h1 {
+            color: blueviolet;
+            text-align: center; /* left, right, center, justify */
+            background-color: floralwhite;
+            font-size: 20mm;
+        }
+        h2 {
+            color: crimson;
+        }
+        p {
+            text-align: justify;
+            color: silver;
+            font-size: 15px;
+            text-indent: 30px;
+        }
+        body {
+            background-color: slateblue;
+        }
+        strong {
+            color: crimson;
+            background-color: whitesmoke;
+            /* text-align: center; */
+        }
+        * { /* универсальный селектор - для каждого тега на сайте */
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Изображения! =)
+            набор пикселей
+            файл в формате png
+            прямоугольный объект с закрашенными пикселями
+
+            .doc => .docx
+            .htm => .html
+            .tif => .tiff
+            .jpg => .jpeg
+            .xls => .xlsx
+
+            png
+            jpeg
+            gif
+            svg
+            webp
+            webj
+
+            Растровые
+                jpeg - фото
+                    очень большое качетво изображения (в зависимости от устройства)
+                    размер файла - огромен!!!!
+                    отсутствует прозрачность фона
+                png - иллюстрации / скриншоты / измененные фото
+                    малый вес (размер файла)ъ
+                    прозрачный фон
+                gif
+            Векторные
+                svg - xml (как html но другой)
+
+            Способы получения картинок:
+                1) Сделать самим
+                2) Попросить друзей
+                3) Найти открытые иточники (https://unsplash.com/)
+                4) Стоки с изображениями (shutterstock, depositphotos) - платные
+                5) Заказать у илюстраторов / фотографов
+                6) Поговорить с афтором =)
+    -->
+    <!-- 
+        data:image/jpeg;base64,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
+
+    -->
+    <h1>Лошади</h1>
+    <p>Ло́шади (лат. Equus) — единственный современный род семейства лошадиных (Equidae) отряда непарнокопытных.</p>
+    <p>Кладистический анализ, основанный на черепных и посткраниальных элементах <strong>(30 таксонов, 129 признаков)</strong>, поддерживает монофилию рода Equus и отрицает признание родов Plesippus и Allohippus, поддерживает происхождение пустынной зебры (Equus grevyi) и членов клады зебры/осла от европейских лошадей Стенона. Недавние результаты исследования генома подтверждают монофилию рода Equus и указывают на его возникновение около 4,0—4,5 млн лет назад[1].</p>
+    <!-- 
+        href - перенаправление на другой файл
+        src - загружает файл с указанного ресурса => отображает файл внутри страницы
+
+        alt
+
+        width - ширина изображения в px
+        height - высота изображения в px
+    -->
+    <!-- <script src="script.js"></script> -->
+    <img src="https://www.youloveit.ru/uploads/gallery/main/439/my_little_ponyes_twailight02.png" alt="Twilight Sparcle" width="200">
+    <div>
+        <h2>Содержание</h2>
+        <div>1 Систематика</div>
+        <div>2 Эволюционная история</div>
+        <div>3 Современные лошади</div>
+        <div>4 В хозяйстве</div>
+        <div>5 См. также</div>
+        <div>6 Примечания</div>
+        <div>7 Литература</div>
+    </div>
+    <h2>Систематика</h2>
+    <p>Систематика лошадей спорна[2]. По наиболее распространённому методу систематики, род лошадей состоит из нескольких вымерших и 9 современных видов:</p>
+    <p>Дикая лошадь (Equus ferus)</p>
+    <p>Домашняя лошадь (Equus caballus), см. также породы лошадей</p>
+    <p>Кианг (Equus kiang)</p>
+    <p>Кулан (Equus hemionus)</p>
+    <p>Дикий осёл (Equus africanus)</p>
+    <p>Домашний осёл (Equus asinus)</p>
+    <p>Горная зебра (Equus zebra)</p>
+    <p>Пустынная зебра (Equus grevyi)</p>
+    <p>Бурчеллова зебра (Equus quagga)</p>
+    <p>† Западная лошадь — вид, обитавший в Северной Америке, и вымерший в конце плейстоцена</p>
+    <p>† Ленская лошадь (Equus lensensis) - существовала в позднем плейстоцене Сибири[3]</p>
+    <p>† Лошадь Стенона — существовала в плиоцене — начале плейстоцена Евразии</p>
+    <p>† Equus neogeus — вымерший в конце плейстоцена южноамериканский вид, относящийся к подроду Amerhippus[en] рода Лошади[4][5][6].</p>
+    <p>Насчёт этой классификации существуют некоторые расходящиеся мнения. Осла и кулана иногда выделяют в отдельный род Asinus, аргументируя тем, что эти два вида отделились от остальных в плиоцене. Лошадь Пржевальского <img src="img/mustang.svg" alt="mustang" height="50"> и домашняя лошадь обычно считаются двумя разными видами из-за разного количества хромосом. Иногда первых всё же причисляют к домашней лошади. По данным палеогенетиков, лошади Пржевальского являются одичавшими потомками ботайских лошадей[7][8].</p>
+    <p>Куланы делятся на ряд подвидов, которые некоторые зоологи рассматривают самостоятельными видами. В зависимости от точки зрения существуют до семи видов куланов. Некоторые зоологи предпочитают делить равнинных зебр на бурчелловых зебр (Equus burchellii) и квагг (Equus quagga quagga). Три вышеперечисленных вида зебр иногда объединяют в общий подрод зебры, который, однако, является условным, так как родство между этими тремя видами не более тесное, чем по отношению к другим видам.</p>
+    <h2>Эволюционная история</h2>
+    <p>Эволюция лошадей хорошо документирована ископаемыми остатками, свидетельствующими о том, как небольшое, размером с собаку лесное животное — пропалеотерий, обладавшее пальцами вместо копыт, за 50 миллионов лет превратилось в крупных копытных обитателей открытых пространств. Основное видообразование происходило в пределах Северной Америки, откуда по существовавшему естественному мосту происходило их проникновение в Евразию, когда это было возможно в отсутствие Берингова пролива и до образования мощного ледникового щита.</p>
+    <p>Эволюция лошадей началась в эоцене, около 55 миллионов лет назад. В то время существовал гиракотерий — предок всех нынешних лошадей, маленький зверёк с высотой в плечах всего 20 см, разжёвывавший своими мелкими зубами листья и фрукты. Гиракотерий нисколько не напоминал сегодняшних лошадей. У этого зверька были выгнутая спина, короткая шея и морда, короткие лапы и длинный хвост. Это было коренастое существо размером с лисицу, с четырёхпалыми конечностями. Череп и объём мозга были относительно малые.</p>
+    <p>Около 50 миллионов лет назад из гиракотериев выделился род Orohippus (орогиппус). Прежде всего, изменились конечности и зубы, орогиппус предпочитал более твёрдую растительную пищу. Три миллиона лет спустя орогиппусы эволюционировали в новый род Epihippus (эпигиппус). Тем временем климат существенно изменился, в Северной Америке стало засушливее, леса сократились, уступая место открытым саваннам. Это было ключевым событием в эволюции лошадей, так как они были вынуждены приспосабливаться к новым условиям. Они стали крупнее, что позволяло им быстрее передвигаться, а также полностью переключились на травяную пищу.</p>
+    <p>40 миллионов лет назад сформировался род Mesohippus (мезогиппус). Высота в холке у этой лошади была около 60 см, спина более не была выгнутой, как у её предков, а лапы, шея и морда стали длиннее. Изменилось также строение его копыт. Около 35 миллионов лет назад он перешёл в род Miohippus, представители которого стали ещё больше, а их морды дополнительно вытянулись.</p>
+    <p>23 миллиона лет назад возник род Parahippus. У этого зверя были более приспособленные зубы и всего лишь по три имеющих копыта пальца. Потомками парагиппусов стали представители рода Merychippus (мерикгиппус), в холке достигавшие до одного метра. Их череп уже напоминал череп современных лошадей, а объём мозга значительно увеличился. Род Merychippus (мерикгиппус) разделился на несколько эволюционных линий, некоторые из которых вымерли. После промежуточного звена под названием Dinohippus около 4,4—4,5 млн лет назад, по данным генетиков, появилась линия Equus, породившая всех современных лошадей, зебр и ослов[9]. Около 2,5 млн лет назад представители рода Equus переправились из Америки через Берингию в Евразию. На Ближнем Востоке Equus стали ослами, онаграми и собственно лошадьми (Equus caballus), в Центральной Африке — зебрами[10].</p>
+    <p>Линия, ведущая к современным одомашненным лошадям (DOM2) ответвляется по геномным данным от линии лошади Пржевальского 43,8 тыс. л. н., а от линии ленской лошади (Equus lensensis) — 118,6 тыс. л. н. Вымершая линия Equus lenensis распространилась в Южную Сибирь. После анализа графика основных компонент (PCA), филогенетической и f3-аутгрупповой кластеризации, выяснилось, что образец MerzlyYar_Rus45_23789 из Республики Тыва (урочище Мёрзлый Яр на западе Тоджинской котловины в верховьях реки Большой Енисей (местное название Бий Хем)) возрастом 24 000 л. н. несёт чрезвычайно расходящуюся митохондриальную ДНК, обнаруженную только на Новосибирских островах возрастом около 33 200 лет назад[11].</p>
+    <p>В Северной Америке лошади вымерли к середине VI тысячелетия до н. э., прежде чем в ходе европейской колонизации в XVI веке туда снова были ввезены представители видов домашняя лошадь и осёл. Одичавшие популяции ввезённых лошадей стали известны как мустанги. Подобный процесс имел место также в Австралии, в которой до этого никогда не было представителей рода лошадей.</p>
+    <h2>Современные лошади</h2>
+    <p>Осёл домашний</p>
+    <p>Кианг в Московском зоопарке</p>
+    <p>Лошадь Пржевальского в Московском зоопарке</p>
+    <p>На основании присутствия мозолистых шишек («каштанов») на обеих парах ног или лишь на передней, степени развития волос на хвосте и окраски, немногочисленные виды лошади делят на два или три подрода.</p>
+    <p>В первом случае различают подрод лошадь собственно (Equus), с шишками на обеих парах ног и сильно развитыми волосами на хвосте (от основания или от половины хвоста), и подрод осёл (Asinus), с шишками лишь на передних ногах и хвостом, покрытым длинными волосами лишь на конце (однако у некоторых относимых сюда форм — квагги и дау — он покрыт длинными волосами почти от основания).</p>
+    <p>В случае деления на три подрода — из подрода осёл выделяют так называемых «тигровых лошадей» (Hippotigris), покрытых многочисленными тёмными и светлыми полосами. К подроду лошадь собственно относится домашняя лошадь, тарпан и лошадь Пржевальского; к подроду осёл — домашний осёл, онагр (Е. onager), кулан, или джигетай (E. hemionus), и отделяемый некоторыми в особый вид кианг (Е. kiang) и африканский осёл (E. taeniopus); по другим, африканские ослы составляют две разновидности обыкновенного: Е. asinus v. africanus и v. somalicus; к подроду тигровых лошадей принадлежат квагга (E. quagga), бурчеллова зебра (Е. burchelii), и горная зебра (Е. zebra) и считаемые некоторыми за особые виды зебра Чапмана (E. chapmanii), близкая к бурчелловой зебре, и зебра Греви (Е. grevyi), близкая к настоящей зебре.</p>
+    <p>Число видов рода лошадь, таким образом, равно 9—12. Замечательно, что различные виды из разных подродов успешно скрещиваются между собой, давая помеси, которые у некоторых видов по большей части неспособны к размножению, у других же плодовиты; так, известны помеси домашней лошади с ослом (обыкновенно бесплодны), с джигетаем (плодовиты), с дау (или кваггой), с потомком осла и зебры, с потомком лошади и квагги; осла с лошадью, с зеброй, с кваггой, с помесью зебры и осла, с куланом; кулана с ослом, кваггой, зеброй; лошадью; тигровых лошадей с лошадью, ослом, куланом, а также их потомков с лошадью и ослом. Некоторые из этих помесей имеют важное практическое значение по своим превосходным качествам.</p>
+    <p>Кобыла по кличке Тамбелина была признана[12] (7 июля 2006 года, город Сент-Луис, штат Миссури) самой маленькой лошадью в мире — её рост в холке составил 44,5 см.</p>
+    <p>Бельгийская упряжная лошадь по кличке Большой Джэйк признана (19 января 2010, фермы Смоуки Холлоу, штат Висконсин, США) самой большой лошадью в мире — её рост составил 210,19 см.</p>
+    <h2>В хозяйстве</h2>
+    <p>Основная статья: Одомашнивание лошади</p>
+    <p>Все современные породы домашних лошадей произошли от диких лошадей, обитавших между Днепром и Уралом, и прирученных, по данным генетиков, около 4200 лет назад[3]. Одомашненная лошадь и осёл выполняли большинство тяжёлой механической работы для человека до изобретения парового и электрического двигателей.</p>
+    <p>Лошадь заняла доминирующее положение в транспорте, как вьючное животное, как тяга гужевого транспорта и как основное животное для верховой езды.</p>
+    <p>Когда Джеймс Уатт изобрел паровую машину, то для демонстрации возможностей машины ему пришлось сравнивать мощность нового устройства с мощностью лошади. В результате была введена единица мощности — лошадиная сила.</p>
+    <h3>Экологическая проблема</h3>
+    <p>До изобретения двигателя внутреннего сгорания основной экологической проблемой городов был конский навоз и моча. Одна лошадь выделяет в среднем 15 кг навоза и 4 литра мочи в день. В крупных городах конца XIX века, таких как Лондон, Париж и Нью-Йорк в транспорте было занято от 200 до 500 тыс. лошадей, оставлявших на улицах огромное количество навоза. Проблема очистки улиц была решена лишь с заменой лошадей автомобилями в первом десятилетии XX века[13].     </p>
+</body>
+</html>
