@@ -1,0 +1,19 @@
+body {
+    background: blueviolet;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+nav {
+    text-align: right;
+}
+h1 {
+    color: lime;
+    text-align: center;
+}
+a {
+    color: yellow;
+    font-size: 30px;
+    font-family: "Courier New", monospace;
+    text-decoration: none;
+}
